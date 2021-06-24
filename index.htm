@@ -4,53 +4,123 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Portfolio</title>
   </head>
   <body>
     <header>
       <div class="container">
+        <div class="name">
+          <h1>StartUp</h1>
+        </div>
         <nav>
-          <div class="logo">
-            <a href="#">StartUp</a>
-          </div>
-          <div class="nav-menu">
-            <ul>
-              <li><a href="#">Portfolio</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
-          </div>
+          <ul>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
         </nav>
       </div>
     </header>
-    <main>
-      <div class="main">
-        <div class="logo-image">
-          <img src="img/avataaars.svg" alt="person" />
+
+    <section class="showcase">
+      <div class="container">
+        <img src="img/avataaars.svg" alt="image" />
+        <h1>Start Bootstrap</h1>
+        <ul>
+          <li>Graphic Artist</li>
+          <li>Web Designer</li>
+          <li>Illustrator</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="portfolio">
+      <div class="container">
+        <h1>Portfolio</h1>
+        <ul>
+          <li><img src="img/cabin.png" alt="cabin" /></li>
+          <li><img src="img/cake.png" alt="cake" /></li>
+          <li><img src="img/circus.png" alt="circus" /></li>
+          <li><img src="img/safe.png" alt="safe" /></li>
+          <li><img src="img/submarine.png" alt="submarine" /></li>
+          <li><img src="img/game.png" alt="game" /></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="about">
+      <div class="container">
+        <h1>About</h1>
+        <div class="paragraph_1">
+          <p>
+            Freelancer is a free bootstrap theme created by Start Bootstrap. The
+            download includes the complete source files including HTML, CSS, and
+            JavaScript as well as optional SASS stylesheets for easy
+            customization.
+          </p>
         </div>
-        <div class="main-header">
-          <h1>Start Bootstrap</h1>
+        <div class="paragraph_2">
+          <p>
+            Freelancer is a free bootstrap theme created by Start Bootstrap. The
+            download includes the complete source files including HTML, CSS, and
+            JavaScript as well as optional SASS stylesheets for easy
+            customization.
+          </p>
+        </div>
+        <button>Free Download</button>
+      </div>
+    </section>
+
+    <section class="contact">
+      <div class="container">
+        <h1>Contact Me</h1>
+        <form>
+          <label for="name">Full name</label>
+          <input type="text" placeholder="Enter Name" />
+
+          <label for="email">Email address</label>
+          <input type="email" placeholder="Enter Email" />
+
+          <label for="number">Phone number</label>
+          <input type="number" placeholder="Enter Number" />
+
+          <label for="message">Message</label>
+          <textarea name="message" rows="10"></textarea>
+        </form>
+      </div>
+    </section>
+
+    <section class="more">
+      <div class="container">
+        <div class="location">
+          <h2>Location</h2>
+          <p>2215 John Daniel Drive Clark, MO 65243</p>
+        </div>
+
+        <div class="more_contact">
+          <h2>Around the web</h2>
           <ul>
-            <li>Web Developer</li>
-            <li>Artist</li>
-            <li>Musician</li>
+            <li><img src="img/Facebook.png" alt="facebook"/></li>
+            <li><img src="img/Instagram.png" alt="instagram" /></li>
+            <li><img src="img/Twitter.png" alt="twitter" /></li>
+            <li><img src="img/WhatsApp.png" alt="whatsapp" /></li>
           </ul>
         </div>
+
+        <div class="more_about">
+          <h2>About Developer</h2>
+          <p>
+            Freelance is a free to use, MIT licensed Bootstrap theme created by
+            Start Bootstrap.
+          </p>
+        </div>
       </div>
-      <div class="portfolio-name">
-        <h1>PORTFOLIO</h1>
-      </div>
-      <div class="images">
-        <img src="img/cabin.png" alt="person" />
-        <img src="img/cake.png" alt="person" />
-        <img src="img/game.png" alt="person" />
-        <img src="img/circus.png" alt="person" />
-        <img src="img/submarine.png" alt="person" />
-        <img src="img/safe.png" alt="person" />
-      </div>
-     
-    </main>
+    </section>
+
+    <footer>
+      <p>Copyright &copy; My Website 2021</p>
+    </footer>
   </body>
 </html>
