@@ -192,8 +192,6 @@ header nav {
     padding-bottom: 20px;
 }
 
-.contact label {}
-
 .contact form input {
     display: block;
     width: 100%;
@@ -209,12 +207,21 @@ header nav {
     color: var(--bs-white);
     padding-bottom: 70px;
     min-height: auto;
+    padding-top: 40px;
 }
 
 .more .location {
     width: 30%;
     float: left;
     text-align: center;
+    padding-right: 50px;
+}
+.more .location h2{
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+.more .location p{
+    font-size: 18px;
 }
 
 .more .more_contact {
@@ -222,9 +229,38 @@ header nav {
     float: left;
     text-align: center;
 }
+.more .more_contact h2{
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+
+.more .more_contact li{
+    list-style: none;
+    display: inline;
+    padding-right: 10px;
+}
 
 .more .more_about{
     float: right;
     width: 30%;
+    text-align: center;
+}
+
+.more .more_about h2{
+    font-size: 30px;
+}
+
+.more .more_about p{
+    font-size: 18px;
+}
+
+   /* footer */
+
+footer{
+    background-color: var(--bs-dark);
+    color: var(--bs-white);
+    padding: 15px 0;
+}
+footer p{
     text-align: center;
 }
