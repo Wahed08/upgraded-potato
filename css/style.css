@@ -28,9 +28,10 @@ body {
     margin: 0;
     padding: 0;
     background-color: var(--bs-white);
+    box-sizing: border-box;
 }
 
-.container{
+.container {
     width: 80%;
     margin: auto;
     overflow: hidden;
@@ -41,43 +42,45 @@ ul {
     padding: 0;
 }
 
-header{
+header {
     background-color: var(--bs-secondary);
     color: var(--bs-white);
     padding-top: 20px;
     min-height: 90px;
 }
 
-header a{
+header a {
     color: var(--bs-white);
     text-decoration: none;
     text-transform: uppercase;
 }
-header .tag{
+
+header .tag {
     text-transform: none;
 }
-header a:hover{
+
+header a:hover {
     color: var(--bs-teal);
     transition: 0.2s ease;
 }
 
-header li{
+header li {
     display: inline;
     padding: 0 20px;
 }
 
-header .name{
+header .name {
     float: left;
     margin: 0;
 }
 
-header nav{
+header nav {
     float: right;
     margin-top: 25px;
 }
 
 /* showcase */
-.showcase{
+.showcase {
     background-color: var(--bs-teal);
     min-height: 300px;
     text-align: center;
@@ -85,53 +88,143 @@ header nav{
     padding-bottom: 70px;
 }
 
-.showcase img{
+.showcase img {
     width: 25%;
     padding-top: 60px;
 }
-.showcase h1{
+
+.showcase h1 {
     font-size: 60px;
     text-transform: uppercase;
 }
-.showcase li{
+
+.showcase li {
     display: inline;
     font-size: 23px;
     padding: 0 12px;
 }
 
-    /* portfolio */
+/* portfolio */
 
-.portfolio{
-   padding: 70px 0 50px 0;
+.portfolio {
+    padding: 70px 0 80px 0;
 }
 
-.portfolio h1{
+.portfolio h1 {
     text-transform: uppercase;
-    font-size: 40px;
+    font-size: 50px;
     text-align: center;
     padding-bottom: 50px;
 }
 
-.portfolio img{
+.portfolio img {
     width: 30%;
-    border-radius: 8px;
     padding-bottom: 40px;
+    border-radius: 8px;
 }
-.portfolio li{
+
+.portfolio li {
+
     display: inline;
     padding: 0 10px;
 }
 
-   /* about */
+/* about */
 
-.about{
+.about {
     background-color: var(--bs-teal);
     padding: 50px 0;
     text-align: center;
     color: var(--bs-white);
     padding-bottom: 70px;
 }
-.about h1{
+
+.about h1 {
     font-size: 55px;
     padding: 10px 0;
+}
+
+.about p {
+    font-size: 20px;
+}
+
+.about .paragraph_1 {
+    float: left;
+    width: 30%;
+    padding-left: 15%;
+}
+
+.about .paragraph_2 {
+    float: right;
+    width: 30%;
+    padding-right: 15%;
+}
+
+.about button {
+    margin-top: 30px;
+    padding: 20px 50px;
+    font-size: 20px;
+    background-color: var(--bs-teal);
+    border-color: var(--bs-gray);
+    color: var(--bs-white);
+    border-radius: 8px;
+    font-family: cursive;
+}
+
+.about button:hover {
+    background-color: var(--bs-white);
+    color: var(--bs-dark);
+    border-color: var(--bs-white);
+    transition: 0.4s ease;
+}
+
+/* contact */
+
+.contact {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 60px;
+}
+
+.contact h1 {
+    font-size: 50px;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+
+.contact label {}
+
+.contact form input {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 20px;
+    margin: 8px 0;
+}
+
+/* more */
+
+.more {
+    background-color: var(--bs-secondary);
+    color: var(--bs-white);
+    padding-bottom: 70px;
+    min-height: auto;
+}
+
+.more .location {
+    width: 30%;
+    float: left;
+    text-align: center;
+}
+
+.more .more_contact {
+    width: 30%;
+    float: left;
+    text-align: center;
+}
+
+.more .more_about{
+    float: right;
+    width: 30%;
+    text-align: center;
 }
