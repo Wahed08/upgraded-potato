@@ -291,3 +291,55 @@ footer {
 footer p {
     text-align: center;
 }
+
+  /* media */
+
+@media(max-width:768px) {
+    header .name, nav{
+        text-align: center;
+    }
+    .showcase h1{
+        font-size: 40px;
+    }
+    .contact h1{
+        font-size: 40px;
+    }
+    .portfolio h1{
+        font-size: 40px;
+    }
+    .about h1{
+        font-size: 40px;
+    }
+    .showcase li{
+        font-size: 18px;
+        display: block;
+    }
+
+    .portfolio img{
+        width: 28%;
+    }
+    .more .location,.more .more_about, .more .more_contact{
+        width: 100%;
+        display: block;
+        float: left;
+        padding-bottom: 30px;
+    }
+}
+
+@media (max-width: 545px){
+    .showcase h1{
+        font-size: 25px;
+    }
+    .contact h1{
+        font-size: 25px;
+    }
+    .portfolio img{
+        width: 25%;
+    }
+    .portfolio h1{
+        font-size: 25px;
+    }
+    .about h1{
+        font-size: 25px;
+    }
+}
