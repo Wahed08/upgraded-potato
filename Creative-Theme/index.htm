@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="image/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Creative - Theme Preview</title>
+  </head>
+  <body>
+    <!-- header -->
+    <section class="opacity">
+      <section class="header show">
+        <div class="container">
+          <nav class="main-nav">
+            <a href=""><h2>Start Bootstrap</h2></a>
+            <ul class="right-menu">
+              <li><a href="#">About</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Portfolio</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+
+      <!-- showcase -->
+      <section class="showcase">
+        <div class="container">
+          <h1>Your Favorite Place for Free Bootstrap Themes</h1>
+          <div class="bottom"></div>
+          <p>
+            Start BootsTrap can hekp you build better websites using the
+            Bootstrap framework just download a theme and star customizing, no
+            string attached!
+          </p>
+          <button class="btn">Find out More</button>
+        </div>
+      </section>
+    </section>
+
+    <!-- next-showcase -->
+    <section class="next-showcase1">
+      <div class="container">
+        <h2>We've got what you need!</h2>
+        <p>
+          Start Bootstrap has everything you need to get your new website up and
+          running in no time! Choose one of our open source, free to download,
+          and easy to use themes! No strings attached!
+        </p>
+        <button class="btn">Get started</button>
+      </div>
+    </section>
+
+    <!-- cards -->
+    <section class="cards">
+      <div class="container">
+        <img src="" alt="" />
+        <h2>Sturdy Themes</h2>
+        <p>Our themes are updated regularly to keep them bug free!</p>
+      </div>
+
+      <div class="container">
+        <img src="" alt="" />
+        <h2>Up to Date</h2>
+        <p>All dependencies are kept current to keep things fresh.</p>
+      </div>
+
+      <div class="container">
+        <img src="" alt="" />
+        <h2>Ready to Publish</h2>
+        <p>You can use this design as is, or you can make changes!</p>
+      </div>
+
+      <div class="container">
+        <img src="" alt="" />
+        <h2>Made with Love</h2>
+        <p>Is it really open source if it's not made with love?</p>
+      </div>
+    </section>
+
+    <!-- image cards -->
+
+    <section class="cards">
+      <img src="./image/1.jpg" alt="1_jpg" />
+      <img src="./image/2.jpg" alt="1_jpg" />
+      <img src="./image/3.jpg" alt="1_jpg" />
+      <img src="./image/4.jpg" alt="1_jpg" />
+      <img src="./image/5.jpg" alt="1_jpg" />
+      <img src="./image/6.jpg" alt="1_jpg" />
+    </section>
+
+    <!-- next showcase -->
+
+    <section class="next-showcase2">
+      <div class="container">
+        <h2>Free Download at Start Bootstrap!</h2>
+        <button class="btn">Download</button>
+      </div>
+    </section>
+
+    <!-- contact -->
+
+    <section class="contact">
+      <div class="container">
+        <h2>Let's Get In Touch!</h2>
+        <p>
+          Ready to start your next project with us? Send us a messages and we
+          will get back to you as soon as possible!
+        </p>
+        <form>
+          <label for="name">Full name</label>
+          <input type="text" placeholder="Enter Name" />
+
+          <label for="email">Email address</label>
+          <input type="email" placeholder="Enter Email" />
+
+          <label for="number">Phone number</label>
+          <input type="text" placeholder="Enter Number" />
+
+          <label for="message">Message</label>
+          <textarea
+            name="message"
+            rows="6"
+            placeholder="Enter Message"
+          ></textarea>
+        </form>
+        <button class="btn">Get started</button>
+        <img src="" alt="" />
+      </div>
+    </section>
+
+    <!-- footer -->
+
+    <section class="footer">
+      <h3>Copyright &copy; 2021 - Wahed Farhad</h3>
+    </section>
+  </body>
+
+  <script>
+    const navbar = document.querySelector('.header');
+    window.onscroll = () => {
+        if (window.scrollY > 300) {
+            navbar.classList.add('show');
+        } else {
+            navbar.classList.remove('show');
+        }
+    };
+  </script>
+</html>
