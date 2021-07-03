@@ -32,7 +32,7 @@ body {
     font-size: 16px;
 }
 
-a {
+a{
     text-decoration: none;
     color: var(--bs-white);
     opacity: 0.8;
@@ -49,29 +49,31 @@ ul {
     margin: auto;
     max-width: 1200px;
 }
+
 /* nav */
-.header {  
+.header {
     background-color: transparent;
     position: fixed;
     width: 100%;
 }
 
 /* nav background show */
-.show {  
+.header.show {
     background-color: var(--bs-white);
     transition: 0.2s ease-in-out;
+    z-index: 1;
+    box-shadow: 0 1px 20px 0 rgba(0,0,0,.3);
+}
+.header.show a{
+    color: var(--bs-dark);
+    font-weight: bold;
 }
 
-.header .show ul li{
-    color: var(--bs-dark) ;
-}
-
-.main-nav{
+.main-nav {
     display: flex;
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
-    
 }
 
 .main-nav ul {
@@ -80,16 +82,15 @@ ul {
 
 .main-nav ul li {
     padding: 0 20px;
-    color: var(--bs-white);
 }
 
-.opacity{
+.opacity {
     background: url('../image/background.jpg') no-repeat center center/cover;
 }
 
 /* showcase */
-.showcase{
-   
+.showcase {
+
     width: 100%;
     height: 900px;
     text-align: center;
@@ -99,23 +100,22 @@ ul {
     align-items: center;
     text-align: center
 }
-.showcase h1{
+
+.showcase h1 {
     color: var(--bs-white);
     font-weight: bold;
     font-size: 50px;
 }
-/* .showcase h1{
-    position: relative;
-} */
-.showcase .bottom{
+
+.showcase .bottom {
     content: "";
-    position:absolute;
+    position: absolute;
     border-bottom: 3px solid var(--bs-orange);
     width: 50px;
     top: 43%
 }
 
-.showcase p{
+.showcase p {
     padding-top: 30px;
     color: var(--bs-white);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -125,7 +125,7 @@ ul {
 
 /* media */
 @media (max-height:768px) {
-    .showcase{
+    .showcase {
         padding-top: 3rem;
     }
 }
