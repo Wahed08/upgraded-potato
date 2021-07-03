@@ -44,7 +44,7 @@ ul {
     margin: 0;
 }
 
-h1{
+h1 {
     padding: 0;
     margin: 0;
 }
@@ -52,7 +52,7 @@ h1{
 .container {
     width: 80%;
     margin: auto;
-    max-width: 1100px;
+    max-width: 1200px;
 }
 
 /* nav */
@@ -113,7 +113,7 @@ h1{
     line-height: 1.2;
 }
 
-.showcase .bottom{
+.showcase .bottom {
     content: "";
     position: absolute;
     border-bottom: 3px solid var(--bs-orange);
@@ -132,7 +132,7 @@ h1{
     font-size: 18px;
 }
 
-.showcase .btn{
+.showcase .btn {
     cursor: pointer;
     display: inline-block;
     border: 0;
@@ -146,7 +146,7 @@ h1{
     font-size: 16px;
 }
 
-.next-showcase1{
+.next-showcase1 {
     width: 100%;
     background-color: var(--bs-orange);
     height: 500px;
@@ -156,15 +156,83 @@ h1{
     justify-content: center;
     align-items: center;
     position: relative;
+    margin-bottom: 100px;
 }
 
-.next-showcase1 h2{
+.next-showcase1 h2 {
     color: var(--bs-white);
     font-weight: bold;
     font-size: 40px;
     line-height: 1.2;
+    padding: 0;
+    margin: 0;
 }
 
+.next-showcase1 .bottom {
+    content: "";
+    position: absolute;
+    border-bottom: 3px solid var(--bs-white);
+    width: 50px;
+    height: 15px;
+    display: inline-block;
+}
+
+.next-showcase1 .btn {
+    cursor: pointer;
+    display: inline-block;
+    border: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 50px;
+    padding: 20px 25px;
+    background-color: var(--bs-white);
+    color: var(--bs-dark);
+    border-radius: 30px;
+    font-size: 16px;
+}
+
+.next-showcase1 p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-top: 30px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 100px;
+    margin-bottom: 70px;
+    margin-top: 30px;
+}
+
+.service{
+    width: 100%;
+    position: relative;
+    text-align: center;
+}
+.service h1 {
+    justify-content: center;
+    text-align: center;
+    color: var(--bs-dark);
+    font-size: 35px;  
+}
+
+.service .bottom{
+    content: "";
+    position: absolute;
+    border-bottom: 3px solid var(--bs-orange);
+    width: 50px;
+    height: 15px;
+    display: inline-block;
+}
+
+.cards div {
+    padding-top: 80px;
+    display: inline-block;
+    justify-content: center;
+}
+.cards div i{
+    color: var(--bs-orange);
+}
 
 /* media */
 @media (max-height:768px) {
