@@ -16,7 +16,6 @@
     <title>Creative - Theme Preview</title>
   </head>
   <body>
-
     <!-- hamburger button -->
     <div class="menu-btn">
       <i class="fas fa-bars fa-2x"></i>
@@ -138,11 +137,7 @@
           <input type="text" placeholder="Full Name" />
           <input type="email" placeholder="Email Address" />
           <input type="text" placeholder="Phone Number" />
-          <textarea
-            name="message"
-            rows="6"
-            placeholder="Message"
-          ></textarea>
+          <textarea name="message" rows="6" placeholder="Message"></textarea>
         </form>
         <button class="btn">Get started</button>
         <img src="" alt="" />
@@ -162,19 +157,17 @@
     window.onscroll = () => {
       if (window.scrollY > 300) {
         navbar.classList.add("show");
-        navbar.classList.add("menu-btn");
       } else {
         navbar.classList.remove("show");
-        navbar.classList.remove("menu-btn");
       }
     };
 
-       // Hamgurger
-      document
-        .querySelector(".menu-btn")
-        .addEventListener("click", () =>
-          document.querySelector(".right-menu").classList.toggle("hamburger")
-        );
-   
+    // Hamgurger
+
+    let Hamburger = document.querySelector(".menu-btn");
+    Hamburger.addEventListener("click", () => {
+      document.querySelector(".right-menu").classList.toggle("hamburger");
+    });
+
   </script>
 </html>
