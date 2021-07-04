@@ -32,6 +32,20 @@ body {
     font-size: 16px;
 }
 
+/* Hamburger button */
+.menu-btn {
+    cursor: pointer;
+    position: absolute;
+    top: 25px;
+    right: 30px;
+    color: white;
+    border: 2px solid var(--bs-light);
+    padding: 3px 10px;
+    border-radius: 2px;
+    z-index: 2;
+    display: none;
+}
+
 a {
     text-decoration: none;
     color: var(--bs-white);
@@ -146,6 +160,7 @@ h1 {
     font-size: 16px;
 }
 
+/* next-showcase1 */
 .next-showcase1 {
     width: 100%;
     background-color: var(--bs-orange);
@@ -196,6 +211,7 @@ h1 {
     padding-top: 30px;
 }
 
+/* cards */
 .cards {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -204,10 +220,11 @@ h1 {
     margin-top: 30px;
 }
 
+/* service */
 .service {
     position: relative;
     text-align: center;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .service h1 {
@@ -232,6 +249,8 @@ h1 {
     color: var(--bs-orange);
 }
 
+
+/* image cards */
 .image-cards {
     max-width: 100%;
     margin: 0 auto;
@@ -244,6 +263,17 @@ h1 {
     width: 100%;
 }
 
+.image-cards img:hover {
+    cursor: pointer;
+    filter: none;
+    -webkit-filter: grayscale(0);
+    -webkit-transform: scale(1.01);
+    -webkit-transition: 0.2s ease-in-out;
+    opacity: 0.9 !important;
+    color: var(--bs-orange);
+}
+
+/* next-showcase2 */
 .next-showcase2 {
     width: 100%;
     background-color: var(--bs-dark);
@@ -271,25 +301,29 @@ h1 {
     border: 0;
     font-size: 16px;
     margin-bottom: 50px;
+    cursor: pointer;
 }
-.contact{
+
+/* contact */
+.contact {
     margin-top: 80px;
     display: flex;
     justify-content: center;
     text-align: center;
     position: relative;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin-bottom: 100px;
 }
 
-.contact h1{
+.contact h1 {
     font-size: 35px;
 }
 
-.contact p{
+.contact p {
     padding-top: 20px;
 }
-.contact .bottom{
+
+.contact .bottom {
     content: "";
     position: absolute;
     border-bottom: 3px solid var(--bs-orange);
@@ -297,18 +331,18 @@ h1 {
     height: 5px;
     display: inline-block;
 }
+
 .contact form input,
 textarea {
     width: 50%;
     padding: 12px 5px;
     margin: 10px auto;
-    box-sizing: border-box;
     display: inline-block;
     padding-bottom: 20px;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.contact .btn{
+.contact .btn {
     width: 50%;
     font-weight: bold;
     text-transform: uppercase;
@@ -319,22 +353,25 @@ textarea {
     border-radius: 30px;
     font-size: 16px;
     opacity: 0.7;
+    cursor: pointer;
 }
-.footer{
+
+/* form */
+.footer {
     display: flex;
     text-align: center;
     justify-content: center;
     background-color: var(--bs-light);
     height: 100px;
 }
-.footer h3{
+
+.footer h3 {
     text-align: center;
     padding-top: 20px;
-    font-family:cursive;
+    font-family: cursive;
     opacity: 0.6;
     font-size: medium;
 }
-
 
 /* media */
 @media (max-height:768px) {
@@ -355,5 +392,38 @@ textarea {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-row: 3;
+    }
+
+    .contact form input,
+    textarea {
+        width: 100%;
+    }
+}
+
+@media (max-width: 575px) {
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 10px;
+    }
+
+    .main-nav li {
+        display: none;
+    }
+
+    .contact form input,
+    textarea {
+        width: 100%;
+    }
+    .menu-btn {
+        display: block;
+    }
+}
+
+@media (max-width: 500px) {
+    .image-cards {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
     }
 }
