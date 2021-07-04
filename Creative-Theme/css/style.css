@@ -204,19 +204,18 @@ h1 {
     margin-top: 30px;
 }
 
-.service{
-    width: 100%;
+.service {
     position: relative;
     text-align: center;
-}
-.service h1 {
-    justify-content: center;
-    text-align: center;
-    color: var(--bs-dark);
-    font-size: 35px;  
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
 }
 
-.service .bottom{
+.service h1 {
+    color: var(--bs-dark);
+    font-size: 35px;
+}
+
+.service .bottom {
     content: "";
     position: absolute;
     border-bottom: 3px solid var(--bs-orange);
@@ -227,16 +226,97 @@ h1 {
 
 .cards div {
     padding-top: 80px;
-    display: inline-block;
-    justify-content: center;
 }
-.cards div i{
+
+.cards div i {
     color: var(--bs-orange);
 }
+
+.image-cards {
+    max-width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+}
+
+.image-cards img {
+    width: 100%;
+}
+
+.next-showcase2 {
+    width: 100%;
+    background-color: var(--bs-dark);
+    height: 400px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.next-showcase2 h2 {
+    color: var(--bs-white);
+    font-size: 35px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.next-showcase2 .btn {
+
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 20px 25px;
+    background-color: var(--bs-white);
+    color: var(--bs-dark);
+    border-radius: 30px;
+    font-size: 16px;
+    margin-bottom: 50px;
+}
+.contact{
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+}
+
+.contact h1{
+    font-size: 35px;
+}
+
+.contact p{
+    padding-top: 20px;
+}
+.contact .bottom{
+    content: "";
+    position: absolute;
+    border-bottom: 3px solid var(--bs-orange);
+    width: 50px;
+    height: 5px;
+    display: inline-block;
+}
+
+
 
 /* media */
 @media (max-height:768px) {
     .showcase {
         padding-top: 3rem;
+    }
+}
+
+@media (max-width:768px) {
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 100px;
+    }
+
+    .image-cards {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-row: 3;
     }
 }
