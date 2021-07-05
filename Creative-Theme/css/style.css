@@ -80,7 +80,7 @@ h1 {
 .header.show {
     background-color: var(--bs-white);
     transition: 0.2s ease-in-out;
-    z-index:1;
+    z-index: 1;
     box-shadow: 0 1px 20px 0 rgba(0, 0, 0, .3);
 }
 
@@ -415,10 +415,12 @@ textarea {
     .menu-btn {
         display: block;
     }
-    .menu-btn:hover{
+
+    .menu-btn:hover {
         opacity: 0.7;
     }
-    .main-nav ul.right-menu{
+
+    .main-nav ul.right-menu {
         display: block;
         position: absolute;
         top: 0;
@@ -432,11 +434,13 @@ textarea {
         transform: translateY(-500px);
         transition: 0.5s ease-in-out;
     }
-    .main-nav ul.right-menu li a{
+
+    .main-nav ul.right-menu li a {
         color: var(--bs-orange);
         font-family: cursive;
     }
-    .main-nav ul.right-menu.hamburger{
+
+    .main-nav ul.right-menu.hamburger {
         transform: translateY(-20px);
     }
 
@@ -444,7 +448,7 @@ textarea {
     textarea {
         width: 100%;
     }
-   
+
 }
 
 @media (max-width: 500px) {
@@ -454,8 +458,9 @@ textarea {
         grid-template-columns: repeat(1, 1fr);
     }
 }
+
 @media (max-width: 400px) {
     .showcase {
-       padding-top: 70px;
+        padding-top: 70px;
     }
 }
