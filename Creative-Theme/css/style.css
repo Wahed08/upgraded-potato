@@ -127,7 +127,7 @@ h1 {
     line-height: 1.2;
 }
 
-.showcase .bottom {
+/* .showcase .bottom {
     content: "";
     position: absolute;
     border-bottom: 3px solid var(--bs-orange);
@@ -137,7 +137,7 @@ h1 {
     justify-content: center;
     text-align: center;
     display: inline-block;
-}
+} */
 
 .showcase p {
     padding-top: 30px;
@@ -183,14 +183,14 @@ h1 {
     margin: 0;
 }
 
-.next-showcase1 .bottom {
+/* .next-showcase1 .bottom {
     content: "";
     position: absolute;
     border-bottom: 3px solid var(--bs-white);
     width: 50px;
     height: 15px;
     display: inline-block;
-}
+} */
 
 .next-showcase1 .btn {
     cursor: pointer;
@@ -232,14 +232,14 @@ h1 {
     font-size: 35px;
 }
 
-.service .bottom {
+/* .service .bottom {
     content: "";
     position: absolute;
     border-bottom: 3px solid var(--bs-orange);
     width: 50px;
     height: 15px;
     display: inline-block;
-}
+} */
 
 .cards div {
     padding-top: 80px;
@@ -323,14 +323,14 @@ h1 {
     padding-top: 20px;
 }
 
-.contact .bottom {
+/* .contact .bottom {
     content: "";
     position: absolute;
     border-bottom: 3px solid var(--bs-orange);
     width: 50px;
     height: 5px;
     display: inline-block;
-}
+} */
 
 .contact form input,
 textarea {
