@@ -1,2 +1,2 @@
 # upgraded-potato
-Some Responsive template 
+- [upgraded-potato](https://wahed08.github.io/upgraded-potato/)
